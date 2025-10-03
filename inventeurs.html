@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventeurs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Inventeurs célèbres</h1>
+    <nav><a href="index.html">Accueil</a></nav>
+  </header>
+  <section>
+    <h2>Quelques inventeurs</h2>
+    <button class="invent-btn" onclick="openModal('edison')">Thomas Edison</button>
+    <button class="invent-btn" onclick="openModal('wright')">Les frères Wright</button>
+    <button class="invent-btn" onclick="openModal('tim')">Tim Berners-Lee</button>
+  </section>
+  <div id="edison" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('edison')">&times;</span><h3>Thomas Edison</h3><p><br><br>Thomas Edison (1847–1931) est souvent considéré comme l’un des inventeurs les plus prolifiques de l’histoire, avec plus de 1 000 brevets à son nom. Son travail à Menlo Park a abouti à des innovations majeures comme l’ampoule électrique, le phonographe et des avancées dans l’enregistrement sonore et la distribution de l’électricité.<br><br><br><br>Edison maîtrisait non seulement l’invention technique mais aussi la mise sur le marché : il a organisé des laboratoires, des essais et des améliorations continues, créant un modèle industriel d’innovation qui influence encore aujourd’hui la recherche appliquée et la production technologique.<br><br></p></div></div>
+  <div id="wright" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('wright')">&times;</span><h3>Les frères Wright</h3><p><br><br>Orville (1871–1948) et Wilbur Wright (1867–1912) sont reconnus pour avoir réussi le premier vol motorisé contrôlé en 1903. Leur approche expérimentale — étude des ailes, tests en soufflerie et amélioration du contrôle — a posé les bases de l’aéronautique moderne.<br><br><br><br>Leur succès technique a eu des retombées immenses : développement de l’aviation civile, transformation des mobilités et impacts géopolitiques liés aux capacités de transport à longue distance.<br><br></p></div></div>
+  <div id="tim" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('tim')">&times;</span><h3>Tim Berners-Lee</h3><p><br><br>Tim Berners-Lee, né en 1955, est l’inventeur du World Wide Web (1989). En proposant un système d’hyperliens et de pages accessibles via des adresses (URLs), il a rendu Internet beaucoup plus utilisable pour le grand public et a permis l’essor des sites web et des services en ligne.<br><br><br><br>Son travail a fondamentalement modifié l’accès à l’information et la communication mondiale. Aujourd’hui, il milite pour un web ouvert et éthique, en faveur de la protection de la vie privée et d’un Internet accessible à tous.<br><br></p></div></div>
+  <footer>Projet réalisé par les élèves de ...</footer>
+  <script>function openModal(id){document.getElementById(id).style.display='block';}function closeModal(id){document.getElementById(id).style.display='none';}</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventions modernes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Inventions modernes</h1>
+    <nav><a href="index.html">Accueil</a></nav>
+  </header>
+  <section>
+    <h2>Quelques inventions modernes</h2>
+    <button class="invent-btn" onclick="openModal('ampoule')">L’ampoule électrique</button>
+    <button class="invent-btn" onclick="openModal('avion')">L’avion</button>
+    <button class="invent-btn" onclick="openModal('telephone')">Le téléphone</button>
+  </section>
+  <div id="ampoule" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ampoule')">&times;</span><h3>L’ampoule électrique</h3><p><br><br>Inventée à la fin du XIXᵉ siècle après des travaux de plusieurs inventeurs, la version commercialement viable de l’ampoule électrique est souvent associée à Thomas Edison (1879). L’ampoule a permis d’assurer un éclairage plus sûr, plus stable et moins coûteux que les lampes à huile ou à gaz. Elle a favorisé l’extension des horaires d’activité, contribuant à l’essor industriel et à l’éducation, car les écoles et les ateliers pouvaient fonctionner plus longtemps et dans de meilleures conditions.<br><br><br><br>Sur le plan social et économique, l’éclairage électrique a influencé l’urbanisme (éclairage des rues), la sécurité publique et la vie nocturne. Les progrès ultérieurs (lampes fluorescentes, LED) ont amélioré l’efficacité énergétique, mais l’idée fondatrice reste un tournant majeur dans la diffusion de l’électricité et la modernisation des sociétés.<br><br></p></div></div>
+  <div id="avion" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('avion')">&times;</span><h3>L’avion</h3><p><br><br>Le vol motorisé réalisé par les frères Wright en 1903 ouvre la voie à l’aviation moderne. Avant cet exploit, voler restait l’apanage des rêves et des prototypes incapables de contrôle prolongé. L’avion a transformé le transport en rendant possible le passage rapide entre des continents et des cultures auparavant éloignés.<br><br><br><br>L’impact économique et stratégique de l’aviation est immense : elle a remodelé les échanges commerciaux, permis le développement du tourisme international et joué un rôle crucial dans les conflits du XXᵉ siècle. Les progrès technologiques (jets, navigation électronique, amélioration des moteurs) ont continué à accroître la sécurité et l’accessibilité du transport aérien.<br><br></p></div></div>
+  <div id="telephone" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('telephone')">&times;</span><h3>Le téléphone</h3><p><br><br>Inventé dans les années 1870, le téléphone d’Alexander Graham Bell a permis la transmission instantanée de la voix à distance, changeant radicalement les communications. Cette invention a accéléré les échanges commerciaux, facilitant la coordination d’activités économiques sur de grandes distances et transformant la vie politique et sociale.<br><br><br><br>Au fil du XXᵉ siècle, le téléphone fixe a évolué vers la téléphonie mobile puis le smartphone qui intègre connexions internet, applications et multimédia. Cette évolution a modifié les modes de communication, le travail à distance et l’accès à l’information en temps réel.<br><br></p></div></div>
+  <footer>Projet réalisé par les élèves de ...</footer>
+  <script>function openModal(id){document.getElementById(id).style.display='block';}function closeModal(id){document.getElementById(id).style.display='none';}</script>
+</body>
+</html>

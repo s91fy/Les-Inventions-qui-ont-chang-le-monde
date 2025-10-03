@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventions contemporaines</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Inventions contemporaines</h1>
+    <nav><a href="index.html">Accueil</a></nav>
+  </header>
+  <section>
+    <h2>Quelques inventions contemporaines</h2>
+    <button class="invent-btn" onclick="openModal('internet')">Internet</button>
+    <button class="invent-btn" onclick="openModal('smartphone')">Smartphone</button>
+    <button class="invent-btn" onclick="openModal('ia')">Intelligence artificielle</button>
+  </section>
+  <div id="internet" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('internet')">&times;</span><h3>Internet</h3><p><br><br>Né des projets de recherche des années 1960 (comme ARPANET) puis popularisé dans les années 1990, Internet est devenu l’infrastructure de communication mondiale. Il a rendu l’information accessible, accéléré la recherche scientifique, permis le commerce électronique et ouvert de nouveaux moyens d’expression et d’organisation sociale.<br><br><br><br>L’internet moderne a aussi ses défis : la protection des données personnelles, la désinformation, et les questions de régulation. Malgré cela, il reste un levier fondamental pour l’éducation, l’innovation et la collaboration internationale.<br><br></p></div></div>
+  <div id="smartphone" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('smartphone')">&times;</span><h3>Smartphone</h3><p><br><br>Le smartphone a fusionné de nombreuses fonctions (téléphone, appareil photo, navigateur web, applications) en un seul appareil compact. Depuis son adoption massive au début des années 2000, il a transformé la manière dont les individus consomment l’information, interagissent socialement et organisent leur travail.<br><br><br><br>Les smartphones ont favorisé l’émergence d’applications pour la santé, la finance et le divertissement, tout en posant des questions sur la concentration, la vie privée et la dépendance numérique. Leur rôle dans l’accès à des services (banque mobile, télémédecine) est particulièrement marquant dans les pays en développement.<br><br></p></div></div>
+  <div id="ia" class="modal"><div class="modal-content"><span class="close" onclick="closeModal('ia')">&times;</span><h3>Intelligence artificielle</h3><p><br><br>L’intelligence artificielle (IA) regroupe des techniques permettant aux machines d’analyser des données, d’apprendre et d’effectuer des tâches complexes. Les progrès récents en apprentissage automatique et en traitement du langage naturel ont permis des applications concrètes : diagnostic médical assisté, reconnaissance d’images, optimisation logistique et véhicules autonomes.<br><br><br><br>Cependant, l’IA soulève aussi des enjeux éthiques et sociétaux : responsabilité, biais algorithmiques, impact sur l’emploi et nécessité d’une régulation équilibrée. Comprendre ces questions est essentiel pour tirer parti des bénéfices tout en réduisant les risques.<br><br></p></div></div>
+  <footer>Projet réalisé par les élèves de ...</footer>
+  <script>function openModal(id){document.getElementById(id).style.display='block';}function closeModal(id){document.getElementById(id).style.display='none';}</script>
+</body>
+</html>
